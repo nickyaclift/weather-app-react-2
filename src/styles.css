@@ -1,0 +1,40 @@
+.App {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+body {
+  margin: 10px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+.location {
+  background-color: #0ec4e9;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  font-size: 40px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 3px 5px hsl(0, 0%, 0%, 30%);
+}
+.city {
+  line-height: 15px;
+  text-align: left;
+}
+
+.card-header {
+  font-size: 17px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  color: #0ec4e9;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+.today {
+  margin: 8px 0px;
+}

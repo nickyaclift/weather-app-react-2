@@ -1,0 +1,14 @@
+.open-source {
+  text-align: left;
+  margin: 0px 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.git-hub,
+.linkedin {
+  text-decoration: none;
+  font-weight: 400;
+}
+.git-hub:hover,
+.linkedin:hover {
+  text-decoration: underline;
+}
