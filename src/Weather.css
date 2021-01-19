@@ -30,10 +30,11 @@
   box-shadow: 1px 4px hsl(0, 0%, 0%, 30%);
   display: inline-block;
 }
-.weather-icon {
+.weather-icon canvas {
   text-align: center;
   margin: 0 auto;
   color: #0ec4e9;
+  display: inline-block;
 }
 .weather-today {
   font-size: 80px;
