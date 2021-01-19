@@ -31,10 +31,8 @@
   display: inline-block;
 }
 .weather-icon canvas {
-  text-align: center;
-  margin: 0 auto;
-  color: #0ec4e9;
-  display: inline-block;
+  margin: 20px 20px auto;
+  display: inline;
 }
 .weather-today {
   font-size: 80px;
@@ -78,4 +76,8 @@ h5 {
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
   color: black;
+}
+.weather {
+  text-align: center;
+  margin: 10px 10px auto;
 }
