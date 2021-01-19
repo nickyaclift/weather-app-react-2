@@ -40,74 +40,83 @@ export default function Weather(props) {
             </div>
           </div>
         </div>
-        <br />
         <div>
-          <form className="form-check-inline form form-contol">
-            <div className="col-sm-8">
-              <div className="card text-dark bg-light mb-3 card border-info search">
-                <input
-                  type="search"
-                  className="form-control search-city"
-                  placeholder="Search City"
-                  id="search-city"
-                  autoFocus="on"
-                />
-              </div>
-            </div>
-            <div className="col-sm-4 btn-toolbar">
-              <div className="btn-group">
-                <button type="submit" className="btn btn-info search-button">
-                  <FontAwesomeIcon icon={faSearch} className="fas fa-search" />
-                </button>
-                <button type="submit" className="btn btn-info marker-location">
-                  <FontAwesomeIcon
-                    icon={faMapMarkerAlt}
-                    className="fas fa-map-marker-alt"
+          <div className="row">
+            <form className="form-check-inline form form-contol">
+              <div className="col-sm-8">
+                <div className="card text-dark bg-light mb-3 card border-info search">
+                  <input
+                    type="search"
+                    className="form-control search-city"
+                    placeholder="Search City"
+                    id="search-city"
+                    autoFocus="on"
                   />
-                </button>
+                </div>
               </div>
-            </div>
-          </form>
-        </div>
-        <div className="weather col-sm-4">
-          <h5>
-            <span className="temperature">
-              {Math.round(weatherData.temperature)}°C
-            </span>
-            <span className="units">
-              <span
-                href="#"
-                className="change-units active"
-                id="celsius"
-                rel="noreferrer"
-              >
-                °C
-              </span>
+              <div className="col-sm-4 btn-toolbar">
+                <div className="btn-group">
+                  <button type="submit" className="btn btn-info search-button">
+                    <FontAwesomeIcon
+                      icon={faSearch}
+                      className="fas fa-search"
+                    />
+                  </button>
+                  <button
+                    type="submit"
+                    className="btn btn-info marker-location"
+                  >
+                    <FontAwesomeIcon
+                      icon={faMapMarkerAlt}
+                      className="fas fa-map-marker-alt"
+                    />
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div className="weather col-sm-4">
+              <h5>
+                <span className="temperature">
+                  {Math.round(weatherData.temperature)}°C
+                </span>
+                <span className="units">
+                  <span
+                    href="#"
+                    className="change-units active"
+                    id="celsius"
+                    rel="noreferrer"
+                  >
+                    °C
+                  </span>
 
-              <span
-                href="#"
-                className="change-units"
-                id="fahrenheit"
-                rel="noreferrer"
-              >
-                °F
-              </span>
-            </span>
+                  <span
+                    href="#"
+                    className="change-units"
+                    id="fahrenheit"
+                    rel="noreferrer"
+                  >
+                    °F
+                  </span>
+                </span>
 
-            <div className="weather-description text-capitalize">
-              {weatherData.description}
+                <div className="weather-description text-capitalize">
+                  {weatherData.description}
+                </div>
+                <div className="windSpeed">
+                  Wind Speed: {weatherData.wind}m/s
+                </div>
+                <div className="humidity humidityValue">
+                  Humidity: {weatherData.humidity}%
+                </div>
+              </h5>
             </div>
-            <div className="windSpeed">Wind Speed: {weatherData.wind}m/s</div>
-            <div className="humidity humidityValue">
-              Humidity: {weatherData.humidity}%
+            <div className="col-sm-2">
+              <FontAwesomeIcon
+                icon={faSun}
+                className="fas fa-sun weather-icon weather-today"
+              />
             </div>
-          </h5>
-        </div>
-        <div className="col-sm-2">
-          <FontAwesomeIcon
-            icon={faSun}
-            className="fas fa-sun weather-icon weather-today"
-          />
+          </div>
         </div>
       </div>
     );
