@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
 
@@ -35,6 +40,7 @@ export default function Weather(props) {
             </div>
           </div>
         </div>
+        <br />
         <div>
           <form className="form-check-inline form form-contol">
             <div className="col-sm-8">
@@ -51,10 +57,13 @@ export default function Weather(props) {
             <div className="col-sm-4 btn-toolbar">
               <div className="btn-group">
                 <button type="submit" className="btn btn-info search-button">
-                  <i className="fas fa-search"></i>
+                  <FontAwesomeIcon icon={faSearch} className="fas fa-search" />
                 </button>
                 <button type="submit" className="btn btn-info marker-location">
-                  <i className="fas fa-map-marker-alt"></i>
+                  <FontAwesomeIcon
+                    icon={faMapMarkerAlt}
+                    className="fas fa-map-marker-alt"
+                  />
                 </button>
               </div>
             </div>
@@ -95,7 +104,10 @@ export default function Weather(props) {
           </h5>
         </div>
         <div className="col-sm-2">
-          <i className="fas fa-sun weather-icon weather-today"></i>
+          <FontAwesomeIcon
+            icon={faSun}
+            className="fas fa-sun weather-icon weather-today"
+          />
         </div>
       </div>
     );
