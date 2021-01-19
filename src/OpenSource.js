@@ -4,7 +4,7 @@ export default function OpenSource() {
   return (
     <div className="open-source">
       <a
-        href="https://github.com/nickyaclift/weather-app-react.git"
+        href="https://github.com/nickyaclift/weather-app-react-2.git"
         target="_blank"
         className="git-hub"
         rel="noreferrer"
