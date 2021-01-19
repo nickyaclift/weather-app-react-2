@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DateTime from "./DateTime";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
@@ -14,7 +15,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       city: response.data.name,
-      date: new Date(response.data.coord.dt) * 1000,
+      date: new Date(response.data.dt * 1000),
     });
   }
   if (weatherData.ready) {
@@ -25,14 +26,7 @@ export default function Weather(props) {
             <div className="col-sm-6">
               <h2 className="location">London</h2>
             </div>
-            <div className="today col-sm-6">
-              <h1>
-                <span className="day">Day </span>
-                <span className="date">Date </span>
-                <span className="month">Month </span>
-                <span className="time">time:mins</span>
-              </h1>
-            </div>
+            <DateTime date={weatherData.date} />
           </div>
         </div>
         <div>
@@ -108,11 +102,10 @@ export default function Weather(props) {
     );
   } else {
     let apiKey = "a05f0202382b8935188265308a3e5140";
-    //let city = "London";
     let units = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=${units}`;
 
     axios.get(apiUrl).then(handleResponse);
-    return "Search for a city";
+    return <div className="loading">Loading...</div>;
   }
 }

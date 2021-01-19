@@ -72,3 +72,9 @@ h5 {
   color: hsl(190, 89%, 48%, 0%);
   cursor: default;
 }
+.loading {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
