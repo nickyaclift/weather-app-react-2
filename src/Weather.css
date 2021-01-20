@@ -80,4 +80,8 @@ h5 {
 .weather {
   text-align: center;
   margin: 0px 10px auto;
+  float: right;
+}
+canvas {
+  margin: 0 auto;
 }

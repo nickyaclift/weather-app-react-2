@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DateTime from "./DateTime";
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Weather.css";
@@ -55,7 +56,7 @@ export default function Weather(props) {
             className="form-check-inline form form-contol"
             onSubmit={handleSubmit}
           >
-            <div className="col-sm-8">
+            <div className="col-sm-12">
               <div className="card text-dark bg-light mb-3 card border-info search">
                 <input
                   type="search"
@@ -68,7 +69,7 @@ export default function Weather(props) {
                 />
               </div>
             </div>
-            <div className="col-sm-4 btn-toolbar">
+            <div className="btn-toolbar">
               <div className="btn-group">
                 <button type="submit" className="btn btn-info search-button">
                   <i className="fas fa-search"></i>
@@ -79,8 +80,9 @@ export default function Weather(props) {
               </div>
             </div>
           </form>
-          <WeatherInfo data={weatherData} />
         </div>
+        <WeatherInfo data={weatherData} />
+        <Forecast city={weatherData.city} />
       </div>
     );
   } else {
