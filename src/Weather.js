@@ -63,7 +63,7 @@ export default function Weather(props) {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row second-row">
           <form
             className="form-check-inline form form-contol"
             onSubmit={handleSubmit}

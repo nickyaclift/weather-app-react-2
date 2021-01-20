@@ -1,20 +1,20 @@
 .search-city {
   text-align: left;
 }
-.form {
+.second-row .form {
   line-height: 50px;
   font-family: "Montserrat", sans-serif;
   margin: 10px;
 }
-.form-control {
+.second-row .form-control {
   padding: 16px;
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
 }
-.fas {
+.form .fas {
   font-size: 35px;
 }
-.btn-info {
+.form .btn-info {
   margin: 0px 0px 16px 0px;
   font-family: "Montserrat", sans-serif;
   background-color: #0ec4e9;
@@ -25,7 +25,7 @@
   border-radius: 8px;
   box-shadow: 2.5px 4px hsl(0, 0%, 0%, 30%);
 }
-.search-button {
+.form .search-button {
   border-radius: 8px;
   box-shadow: 1px 4px hsl(0, 0%, 0%, 30%);
   display: inline-block;
@@ -72,9 +72,9 @@ h5 {
 }
 .weather {
   text-align: center;
-  margin: 0px 10px auto;
+  margin: 10px 10px auto;
   float: right;
 }
 canvas {
-  margin: 0 auto;
+  margin: 20px auto;
 }
