@@ -1,34 +1,13 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
     <div className="row">
       <div className="weather col-sm">
         <h5>
-          <span className="temperature">
-            {Math.round(props.data.temperature)}°C
-          </span>
-          <span className="units">
-            <span
-              href="#"
-              className="change-units active"
-              id="celsius"
-              rel="noreferrer"
-            >
-              °C
-            </span>
-
-            <span
-              href="#"
-              className="change-units"
-              id="fahrenheit"
-              rel="noreferrer"
-            >
-              °F
-            </span>
-          </span>
-
+          <WeatherTemperature temperature={props.data.temperature} />
           <div className="weather-description text-capitalize">
             {props.data.description}
           </div>
