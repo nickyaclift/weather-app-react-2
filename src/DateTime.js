@@ -41,9 +41,9 @@ export default function DateTime(props) {
         <span className="day">{day} </span>
         <span className="date">{date} </span>
         <span className="month">{month} </span>
-        <span className="time">
+        <div className="time">
           {hours}:{minutes}
-        </span>
+        </div>
       </h1>
     </div>
   );

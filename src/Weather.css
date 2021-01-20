@@ -64,13 +64,6 @@ h5 {
   color: black;
 }
 
-.active {
-  color: hsl(190, 89%, 48%, 0%);
-}
-.weather .active:hover {
-  color: hsl(190, 89%, 48%, 0%);
-  cursor: default;
-}
 .loading {
   text-align: center;
   font-size: 30px;
