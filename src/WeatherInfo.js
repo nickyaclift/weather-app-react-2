@@ -8,6 +8,12 @@ export default function WeatherInfo(props) {
     <div>
       <div className="row">
         <div className="col-sm-12"></div>
+        <div className="col-sm-2"></div>
+
+        <div className="col-sm-2">
+          <WeatherIcon code={props.data.icon} />
+        </div>
+        <div className="col-sm-1"></div>
 
         <div className="weather col-sm-6">
           <h5>
@@ -20,9 +26,6 @@ export default function WeatherInfo(props) {
               Humidity: {props.data.humidity}%
             </div>
           </h5>
-        </div>
-        <div className="col-sm-2">
-          <WeatherIcon code={props.data.icon} />
         </div>
       </div>
     </div>
