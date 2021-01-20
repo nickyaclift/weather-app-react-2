@@ -4,7 +4,7 @@
 .second-row .form {
   line-height: 50px;
   font-family: "Montserrat", sans-serif;
-  margin: 10px;
+  margin: 40px 10px;
 }
 .second-row .form-control {
   padding: 16px;
@@ -26,14 +26,12 @@
   box-shadow: 2.5px 4px hsl(0, 0%, 0%, 30%);
 }
 .form .search-button {
-  border-radius: 8px;
   box-shadow: 1px 4px hsl(0, 0%, 0%, 30%);
-  display: inline-block;
 }
-.weather-icon canvas {
-  margin: 20px 20px auto;
-  display: inline;
+.form .search {
+  margin: 0px 10px;
 }
+
 .weather-today {
   font-size: 80px;
   line-height: 100px;
@@ -77,4 +75,5 @@ h5 {
 }
 canvas {
   margin: 20px auto;
+  display: inline;
 }

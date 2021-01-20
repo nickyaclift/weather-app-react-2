@@ -64,11 +64,11 @@ export default function Weather(props) {
         </div>
 
         <div className="row second-row">
-          <form
-            className="form-check-inline form form-contol"
-            onSubmit={handleSubmit}
-          >
-            <div className="col-sm-12">
+          <div className="col-sm-6">
+            <form
+              className="form-check-inline form form-contol"
+              onSubmit={handleSubmit}
+            >
               <div className="card text-dark bg-light mb-3 card border-info search">
                 <input
                   type="search"
@@ -80,21 +80,22 @@ export default function Weather(props) {
                   onChange={handleCity}
                 />
               </div>
-            </div>
-            <div className="btn-toolbar">
-              <div className="btn-group">
-                <button type="submit" className="btn btn-info search-button">
-                  <i className="fas fa-search"></i>
-                </button>
-                <button
-                  className="btn btn-info marker-location"
-                  onClick={getCurrentLocation}
-                >
-                  <i className="fas fa-map-marker-alt"></i>
-                </button>
+              <div className="btn-toolbar">
+                <div className="btn-group">
+                  <button type="submit" className="btn btn-info search-button">
+                    <i className="fas fa-search"></i>
+                  </button>
+                  <button
+                    type="submit"
+                    className="btn btn-info marker-location"
+                    onClick={getCurrentLocation}
+                  >
+                    <i className="fas fa-map-marker-alt"></i>
+                  </button>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
           <WeatherInfo data={weatherData} />
         </div>
         <Forecast city={weatherData.city} />

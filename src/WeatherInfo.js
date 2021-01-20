@@ -7,7 +7,7 @@ export default function WeatherInfo(props) {
   return (
     <div>
       <div className="row">
-        <div className="col-sm-4"></div>
+        <div className="col-sm-12"></div>
 
         <div className="weather col-sm-6">
           <h5>
@@ -21,7 +21,7 @@ export default function WeatherInfo(props) {
             </div>
           </h5>
         </div>
-        <div className="col-sm-1">
+        <div className="col-sm-2">
           <WeatherIcon code={props.data.icon} />
         </div>
       </div>
