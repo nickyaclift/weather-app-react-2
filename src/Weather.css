@@ -25,6 +25,9 @@
   border-radius: 8px;
   box-shadow: 2.5px 4px hsl(0, 0%, 0%, 30%);
 }
+.form .btn-info:hover {
+  background-color: #0b99b5;
+}
 .form .search-button {
   box-shadow: 1px 4px hsl(0, 0%, 0%, 30%);
 }
